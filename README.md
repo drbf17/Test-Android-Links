@@ -1,4 +1,4 @@
 # Test-Android-Links
 Test Android Links
 
-[Android links](https://htmlpreview.github.io/?https://raw.githubusercontent.com/drbf17/Test-Android-Links/main/index.html)
+[Android links](https://drbf17.github.io/Test-Android-Links/)
