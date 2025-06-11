@@ -4,10 +4,25 @@
 
 <h1>HTML Links</h1>
 
+<input type="text" id="linkInput" placeholder="Digite o link aqui" />
+  <button onclick="abrirLink()">Abrir Link</button>
+
+  <script>
+    function abrirLink() {
+      const url = document.getElementById('linkInput').value;
+      if (url) {
+        window.open(url, '_blank');
+      } else {
+        alert('Por favor, insira um link.');
+      }
+    }
+  </script>
+
   <p><a href="br.gov.caixa.internetbanking://home">SIMOB</a></p>
   <br>
 
-
+  <p><a href="https://login.openbanking.caixa.gov.br/onboarding?journey=cadastro">Onbording</a></p>
+  <br>
   
 <p><a href="https://cef.interaxa.com.br:8280/Media/9812dac7-85d3-4e18-bda4-38243138e2e5/DOCUMENT/5491d8a0-dbbf-4782-8fbe-3c75d92b1f0e.pdf">PDF Web Chat - SIMOB Prod</a></p>
   <br>
