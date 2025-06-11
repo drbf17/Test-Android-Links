@@ -4,40 +4,60 @@
 
 <h1>HTML Links</h1>
 
-<input type="text" id="linkInput" placeholder="Digite o link aqui" />
-  <button onclick="abrirLink()">Abrir Link</button>
+<head>
 
-  <script>
-    function abrirLink() {
-      const url = document.getElementById('linkInput').value;
-      if (url) {
-        window.open(url, '_blank');
-      } else {
-        alert('Por favor, insira um link.');
-      }
-    }
-  </script>
+    <meta charset="UTF-8">
 
-  <p><a href="br.gov.caixa.internetbanking://home">SIMOB</a></p>
-  <br>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <p><a href="https://login.openbanking.caixa.gov.br/onboarding?journey=cadastro">Onbording</a></p>
-  <br>
-  
-<p><a href="https://cef.interaxa.com.br:8280/Media/9812dac7-85d3-4e18-bda4-38243138e2e5/DOCUMENT/5491d8a0-dbbf-4782-8fbe-3c75d92b1f0e.pdf">PDF Web Chat - SIMOB Prod</a></p>
-  <br>
-<p><a href="https://autoriza-pagamento.caixa.gov.br/openbankingibc?consentId=urn:bancoex:C1DD33123&pf=1&flowId=2">Android app link - SIMOB Prod</a></p>
-  <br>
-  <p><a href="https://stgdeeplinkdes.z15.web.core.windows.net/openbankingibc?consentId=urn:bancoex:C1DD33123&pf=1&flowId=2">Android app link - SIMOB Dev</a></p>
-  <br>
-  <p><a href="https://autoriza-pagamento.caixa.gov.br/openbanking?consentId=urn:bancoex:C1DD33123&pf=1&flowId=2">Android app link - CAIXA TEM Prod</a></p>
-  <br>
-    <p><a href="https://stgdeeplinkdes.z15.web.core.windows.net/openbanking?consentId=urn:bancoex:C1DD33123&pf=1&flowId=2">Android app link - CAIXA TEM Dev</a></p>
-  <br>
-<p><a href="caixa://openbanking.pix/openbankingibc?consentId=urn:bancoex:C1DD33123&pf=1&flowId=2">Custom Scheme</a></p>
-  <br>
-<p><a href="intent://stackoverflow.com/questions/29250152/what-is-the-intent-to-launch-any-website-link-in-google-chrome#Intent;scheme=http;package=com.android.chrome;end">Intent Scheme - Open Chrome</a></p>
-  <br>
-<p><a href="intent://autoriza-pagamento.caixa.gov.br/openbankingibc?consentId=urn:bancoex:C1DD33123&pf=1&flowId=2#Intent;scheme=https;package=br.com.gabba.Caixa;end">Intent Scheme - Open Caixa https</a></p>  
+    <title>Teste de Openfinance</title>
+
+    <style>
+
+        /* ... seus estilos CSS ... */
+
+        textarea {
+
+            width: 100%;
+
+            height: 100px; /* Ajuste a altura conforme necessário */
+
+            resize: vertical; /* Permite redimensionar verticalmente */
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Teste de Deeplink</h1>
+
+    <textarea id="urlInput" placeholder="Digite o link aqui"></textarea>
+
+    <button onclick="openLink()">Clique para seguir</button>
+
+ 
+
+    <script>
+
+        function openLink() {
+
+            var url = document.getElementById('urlInput').value;
+
+            if (url) {
+
+                window.open(url, '_blank');
+
+            } else {
+
+                alert('Por favor, insira um link válido.');
+
+            }
+
+        }
+
+    </script>
 </body>
 </html>
